@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Thông tin dịch vụ n8n-FAST</title>
+    <!-- Nhúng Google Font Montserrat -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              montserrat: ["Montserrat", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 p-6 font-montserrat leading-tight">
+    <div
+      class="max-w-2xl mx-auto bg-white rounded-xl overflow-hidden shadow-md"
+    >
+      <!-- Header hình ảnh -->
+      <div class="bg-white p-2 text-center">
+        <img
+          src="./assets/Logo (with text).png"
+          alt="Order Confirmation"
+          class="mx-auto w-40 h-10"
+        />
+      </div>
+      <div class="bg-gray-900 px-8 py-8 text-white text-center">
+        <h1 class="text-4xl font-bold mb-2">Cảm ơn bạn đã đặt hàng!</h1>
+        <p class="mt-1">Chúng tôi rất vinh dự được phục vụ quý khách.</p>
+      </div>
+      <div class="px-12 py-6 space-y-4 text-gray-800 text-sm sm:text-base">
+        <p>Kính gửi anh/chị <strong>[LNAME]</strong>,</p>
+
+        <p>
+          Đơn đăng ký <strong>dịch vụ n8n VPS</strong> của quý khách đã được
+          tiếp nhận thành công. Dưới đây là thông tin truy cập:
+        </p>
+
+        <table class="w-full text-left text-sm border border-gray-300">
+          <thead class="bg-gray-100">
+            <tr>
+              <th class="p-3 border-b">Dịch vụ</th>
+              <th class="p-3 border-b">Đường dẫn</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="p-3 border-b font-semibold">N8N Automation</td>
+              <td class="p-3 border-b">n8n-[...]n8nfast.name.vn</td>
+            </tr>
+            <tr>
+              <td class="p-3 border-b font-semibold">PostgreSQL Database</td>
+              <td class="p-3 border-b">db-[...]n8nfast.name.vn</td>
+            </tr>
+            <tr>
+              <td class="p-3 border-b font-semibold">Milvus Vector Store</td>
+              <td class="p-3 border-b">attu-[...]n8nfast.name.vn</td>
+            </tr>
+            <tr>
+              <td class="p-3 border-b font-semibold">Redis Memory</td>
+              <td class="p-3 border-b">redis-[...]n8nfast.name.vn</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2 class="font-semibold mt-6">Hướng dẫn truy cập:</h2>
+        <ul class="list-disc list-inside space-y-1">
+          <li>
+            <strong>N8N:</strong> Đăng nhập bằng Gmail, sau đó thiết lập mật
+            khẩu.
+          </li>
+          <li>
+            <strong>PostgreSQL:</strong> Dùng email đăng ký VPS để truy cập.
+          </li>
+          <li>
+            <strong>Redis:</strong> Truy cập trực tiếp, không cần đăng nhập.
+          </li>
+          <li>
+            <strong>Milvus (Attu):</strong> endpoint:
+            <code>standalone:19530</code>
+          </li>
+        </ul>
+
+        <p class="text-gray-600">
+          Nếu cần hỗ trợ, vui lòng liên hệ qua email:
+          <strong>n8nfast@gmail.com</strong>
+        </p>
+      </div>
+      <div class="bg-gray-900 px-6 py-4 text-center text-gray-400 text-sm">
+        © 2024 n8n-FAST. All rights reserved.
+      </div>
+    </div>
+  </body>
+</html>
